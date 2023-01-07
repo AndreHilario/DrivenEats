@@ -90,7 +90,7 @@ h3 {
     position: relative;
     
 }
-.descricao img {
+.descricao img:nth-child(1) {
     width: 144px;
     height: 87px;
     border-radius: 4px;
@@ -128,6 +128,24 @@ h3 {
     left: 14px;
     top: 184px;
 }
+.check-tamanho {
+    width: 16px;
+    height: 16px;
+
+    position: absolute;
+    top: 185px;
+    left: 144px;
+}
+.white {
+    background-color: white;
+    width: 16px;
+    height: 16px;
+
+    position: absolute;
+    top: 185px;
+    left: 144px;
+}
+
 footer {
     width: 100%;
     background-color: #FFFFFF;
@@ -161,6 +179,8 @@ footer button {
 .selecionado {
     border-color:  #32B72F;
 }
+
+
 .botao-ativo {
     background-color: #32B72F;
 }
