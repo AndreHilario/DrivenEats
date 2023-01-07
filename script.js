@@ -19,14 +19,17 @@ function selecionarPrato(botaoClicado) {
 
     botaoClicado.classList.add('selecionado');
     
+    
     prato = botaoClicado.classList.contains('selecionado');
     console.log(prato);
 
+
+
     if(prato === true){
-        botaoClicado = document.querySelector('.pratos .nome');
+        botaoClicado = document.querySelector('.pratos .selecionado .nome');
         nomePrato = botaoClicado.innerHTML;
     }
-    botaoClicado = document.querySelector('.pratos .valor');
+    botaoClicado = document.querySelector('.pratos .selecionado .valor');
     valorPrato = botaoClicado.innerHTML;
     valorPrato = parseFloat(valorPrato.replace(',','.'));
 
@@ -44,19 +47,19 @@ function selecionarBebida(botaoClicado2) {
     
 
     botaoClicado2.classList.add('selecionado');
+    
 
     bebida = botaoClicado2.classList.contains('selecionado');
     console.log(bebida);
 
     if(bebida === true){
-        botaoClicado2 = document.querySelector('.bebidas .nome');
+        botaoClicado2 = document.querySelector('.bebidas .selecionado .nome');
         nomeBebida = botaoClicado2.innerHTML;
     }
 
-    botaoClicado2 = document.querySelector('.bebidas .valor');
+    botaoClicado2 = document.querySelector('.bebidas .selecionado .valor');
     valorBebida = botaoClicado2.innerHTML;
     valorBebida = parseFloat(valorBebida.replace(',','.'));
-    valorBebida
     
 }
     
@@ -70,16 +73,17 @@ function selecionarSobremesa(botaoClicado3) {
     }
 
     botaoClicado3.classList.add('selecionado');
+   
 
     sobremesa = botaoClicado3.classList.contains('selecionado');
     console.log(sobremesa);
 
     if(sobremesa === true){
-        botaoClicado3 = document.querySelector('.sobremesas .nome');
+        botaoClicado3 = document.querySelector('.sobremesas .selecionado .nome');
         nomeSobremesa = botaoClicado3.innerHTML;
     }
 
-    botaoClicado3 = document.querySelector('.sobremesas .valor');
+    botaoClicado3 = document.querySelector('.sobremesas .selecionado .valor');
     valorSobremesa = botaoClicado3.innerHTML;
     valorSobremesa = parseFloat(valorSobremesa.replace(',','.'));
 }

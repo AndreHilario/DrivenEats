@@ -145,14 +145,8 @@ h3 {
     top: 185px;
     left: 144px;
 }
-.white {
-    background-color: white;
-    width: 16px;
-    height: 16px;
-
-    position: absolute;
-    top: 185px;
-    left: 144px;
+.escondido {
+    display: none;
 }
 
 footer {
