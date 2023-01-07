@@ -107,24 +107,26 @@
             </div>
         </div>
         <footer>
-            <button class="botao-finalizar" onclick="fazerPedido()" disabled>Selecione os 3 itens<br>
+            <button class="botao-finalizar" onclick="fazerPedido(this)" disabled>Selecione os 3 itens<br>
                 para fechar o pedido</button>
         </footer>
     </div>
-    <div class="painel-pedido">
-        <p>Confirme seu pedido</p> 
-        <div class="prato"></div>
-        <div class="valor-prato"></div>
-        <div class="bebida"></div>
-        <div class="valor-bebida"></div>
-        <div class="sobremesa"></div>
-        <div class="valor-sobremesa"></div>
-        <div class="total"></div>
-        <div class="valor-total"></div>
-        <div class="confirmacao">
-            <p>Tudo certo, pode pedir!</p>
+    <div class="painel">
+        <div class=" escondido painel-pedido">
+            <p>Confirme seu pedido</p> 
+            <div class="prato"></div>
+            <div class="valor-prato"></div>
+            <div class="bebida"></div>
+            <div class="valor-bebida"></div>
+            <div class="sobremesa"></div>
+            <div class="valor-sobremesa"></div>
+            <div class="total">Total</div>
+            <div class="valor-total"></div>
+            <div class="confirmacao">
+                <p>Tudo certo, pode pedir!</p>
+            </div>
+            <div class="cancelar">Cancelar</div>
         </div>
-        <div class="cancelar">Cancelar</div>
     </div>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
     <script src="script.js"></script>

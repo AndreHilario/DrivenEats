@@ -7,6 +7,7 @@ let nomeSobremesa;
 let valorPrato;
 let valorBebida;
 let valorSobremesa;
+let soma;
 
 function selecionarPrato(botaoClicado) {
 
@@ -99,11 +100,9 @@ function botaoFinalizar() {
     const habilitarBotao = document.querySelector('.botao-finalizar');
     habilitarBotao.removeAttribute("disabled");
 }
-
-
-function fazerPedido() {
+function textoDoPedido() {
     let mensagem;
-    let soma = valorPrato + valorBebida + valorSobremesa;
+    soma = valorPrato + valorBebida + valorSobremesa;
 
     mensagem = `Olá, gostaria de fazer o pedido:
               - Prato: ${nomePrato}
@@ -112,6 +111,44 @@ function fazerPedido() {
               Total: R$ ${soma.toFixed(2)}`
     alert(mensagem);
 }
+
+function fazerPedido(botaoPedir) {
+
+    const botaoPedido = document.querySelector('.painel .escondido');
+    botaoPedido.classList.remove('escondido');
+
+    const botaoOpaco = document.querySelector('.container');
+    botaoOpaco.classList.add('container-painel');
+
+    botaoPedir = document.querySelector('.painel .prato');
+    botaoPedir.innerHTML = nomePrato;
+
+    const botaoPedir2 = document.querySelector('.painel .valor-prato');
+    botaoPedir2.innerHTML = valorPrato.toFixed(2);
+    
+
+    const botaoPedir3 = document.querySelector('.painel .bebida');
+    botaoPedir3.innerHTML = nomeBebida;
+
+    const botaoPedir4 = document.querySelector('.painel .valor-bebida');
+    botaoPedir4.innerHTML = valorBebida.toFixed(2);
+    
+
+    const botaoPedir5 = document.querySelector('.painel .sobremesa');
+    botaoPedir5.innerHTML = nomeSobremesa;
+
+    const botaoPedir6 = document.querySelector('.painel .valor-sobremesa');
+    botaoPedir6.innerHTML = valorSobremesa.toFixed(2);
+    
+
+    const botaoPedir7 = document.querySelector('.painel .valor-total');
+    somaTotal = valorPrato + valorBebida + valorSobremesa;
+    botaoPedir7.innerHTML = `R$ ${somaTotal.toFixed(2)}`;
+    
+    
+
+}
+
 
 
 
