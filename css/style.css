@@ -119,13 +119,22 @@ h3 {
     left: 14px;
     top: 140px;
 }
-.descricao h5 {
+.cifrao {
     color: #000000;
     font-size: 16px;
     line-height: 19px;
 
     position: absolute;
     left: 14px;
+    top: 184px;
+}
+.descricao h5 {
+    color: #000000;
+    font-size: 16px;
+    line-height: 19px;
+
+    position: absolute;
+    right: 95px;
     top: 184px;
 }
 .check-tamanho {

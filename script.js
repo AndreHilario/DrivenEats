@@ -26,6 +26,8 @@ function selecionarPrato(botaoClicado) {
         botaoClicado = document.querySelector('.pratos .nome');
         nomePrato = botaoClicado.innerHTML;
     }
+    botaoClicado = document.querySelector('.pratos .valor');
+    valorPrato = botaoClicado.innerHTML;
 
 }
 
@@ -49,6 +51,10 @@ function selecionarBebida(botaoClicado2) {
         botaoClicado2 = document.querySelector('.bebidas .nome');
         nomeBebida = botaoClicado2.innerHTML;
     }
+
+    botaoClicado2 = document.querySelector('.bebidas .valor');
+    valorBebida = botaoClicado2.innerHTML;
+    
 }
     
 function selecionarSobremesa(botaoClicado3) {
@@ -69,6 +75,10 @@ function selecionarSobremesa(botaoClicado3) {
         botaoClicado3 = document.querySelector('.sobremesas .nome');
         nomeSobremesa = botaoClicado3.innerHTML;
     }
+
+    botaoClicado3 = document.querySelector('.sobremesas .valor');
+    valorSobremesa = botaoClicado3.innerHTML;
+    valorSobremesa = parseInt(valorSobremesa);
 }
 
 function botaoFinalizar() {
@@ -82,6 +92,7 @@ function botaoFinalizar() {
     const habilitarBotao = document.querySelector('.botao-finalizar');
     habilitarBotao.removeAttribute("disabled");
 }
+
 
 function fazerPedido() {
     let mensagem;
