@@ -28,6 +28,7 @@ function selecionarPrato(botaoClicado) {
     }
     botaoClicado = document.querySelector('.pratos .valor');
     valorPrato = botaoClicado.innerHTML;
+    valorPrato = parseFloat(valorPrato.replace(',','.'));
 
 }
 
@@ -54,6 +55,8 @@ function selecionarBebida(botaoClicado2) {
 
     botaoClicado2 = document.querySelector('.bebidas .valor');
     valorBebida = botaoClicado2.innerHTML;
+    valorBebida = parseFloat(valorBebida.replace(',','.'));
+    valorBebida
     
 }
     
@@ -78,7 +81,7 @@ function selecionarSobremesa(botaoClicado3) {
 
     botaoClicado3 = document.querySelector('.sobremesas .valor');
     valorSobremesa = botaoClicado3.innerHTML;
-    valorSobremesa = parseInt(valorSobremesa);
+    valorSobremesa = parseFloat(valorSobremesa.replace(',','.'));
 }
 
 function botaoFinalizar() {
@@ -96,12 +99,13 @@ function botaoFinalizar() {
 
 function fazerPedido() {
     let mensagem;
+    let soma = valorPrato + valorBebida + valorSobremesa;
 
     mensagem = `Olá, gostaria de fazer o pedido:
               - Prato: ${nomePrato}
               - Bebida: ${nomeBebida}
               - Sobremesa: ${nomeSobremesa}
-              Total: R$ ${valorPrato + valorBebida + valorSobremesa}`
+              Total: R$ ${soma.toFixed(2)}`
     alert(mensagem);
 }
 
