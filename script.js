@@ -71,7 +71,7 @@ function selecionarSobremesa(botaoClicado3) {
 
         sobremesaAnterior.classList.remove('selecionado');
     }
-
+    
     botaoClicado3.classList.add('selecionado');
    
 
