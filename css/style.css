@@ -215,6 +215,7 @@ footer button {
     width: 329px;
     height: 52px;
     border-radius: 9px;
+    border: 10px solid #FFFFFF;
     background-color: #FFFFFF;
     margin: 199px auto;
 
@@ -231,6 +232,8 @@ footer button {
 }
 .cancelar {
     color: #FFFFFF;
+    background-color: #50D074;
+    border: 1px solid #50D074;
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
