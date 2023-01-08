@@ -117,10 +117,10 @@ function botaoFinalizar() {
         const botao = document.querySelector('.botao-finalizar');
         botao.classList.add('botao-ativo');
         botao.innerHTML = "Fechar pedido";
-        
+        const habilitarBotao = document.querySelector('.botao-finalizar');
+        habilitarBotao.removeAttribute("disabled");  
     }
-    const habilitarBotao = document.querySelector('.botao-finalizar');
-    habilitarBotao.removeAttribute("disabled");
+    
 
 }
 
