@@ -126,7 +126,7 @@ function botaoFinalizar() {
 
 function botaoFinalizarInfo(){
     nome = prompt("Digite seu nome");
-    endereco = prompt("Digite seu endereco");
+    endereco = prompt("Digite seu endereço");
 
 }
 
