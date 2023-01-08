@@ -172,9 +172,14 @@ function fazerPedido(botaoPedir) {
     const botaoPedir7 = document.querySelector('.painel .valor-total');
     somaTotal = valorPrato + valorBebida + valorSobremesa;
     botaoPedir7.innerHTML = `R$ ${somaTotal.toFixed(2)}`;
-    
-    
+     
+}
+function cancelar() {
+    const botaoCancelar = document.querySelector('.painel');
+    botaoCancelar.classList.add('escondido');
 
+    const botaoCancelar2 = document.querySelector('.container-painel');
+    botaoCancelar2.classList.remove('container-painel');
 }
 
 
