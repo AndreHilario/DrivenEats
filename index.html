@@ -32,7 +32,7 @@
                     <p>Um pouco de batata, um pouco de salada</p>
                     <div class="cifrao">R$</div>
                     <h5 class="valor">14,90</h5>
-                    <img class="escondido check-tamanho" src="img/Vector.png">
+                    <div class="checkVerde escondido"><img class="check-tamanho" src="img/Vector.png"></div>
                 </div>
                 <div class="descricao" onclick="selecionarPrato(this); botaoFinalizar()">
                     <img src="img/toast-eggs-for-breakfast.jpg">
@@ -40,7 +40,7 @@
                     <p>Ovos e torradas</p>
                     <div class="cifrao">R$</div>
                     <h5 class="valor"> 15,90</h5>
-                    <img class="escondido check-tamanho" src="img/Vector.png">
+                    <div class="checkVerde escondido"><img class="check-tamanho" src="img/Vector.png"></div>
                 </div>
                 <div  class="descricao" onclick="selecionarPrato(this); botaoFinalizar()">
                     <img src="img/plated-smoked-salmon.jpg">
@@ -48,7 +48,7 @@
                     <p>Salmão defumado</p>
                     <div class="cifrao">R$</div>
                     <h5 class="valor"> 16,90</h5>
-                    <img class="escondido check-tamanho" src="img/Vector.png">
+                    <div class="checkVerde escondido"><img class="check-tamanho" src="img/Vector.png"></div>
                 </div>
             </div>
             <h3>Agora, sua bebida</h3>
@@ -58,7 +58,7 @@
                     <h4 class="nome">Coquinha gelada</h4>
                     <p>Lata 350ml</p>
                     <div class="cifrao">R$</div>
-                    <h5 class="valor"> 4,90</h5>
+                    <h5 class="valor"> 14,90</h5>
                     <img class="escondido check-tamanho" src="img/Vector.png">
                 </div>
                 <div class="descricao" onclick="selecionarBebida(this); botaoFinalizar()">
@@ -66,7 +66,7 @@
                     <h4 class="nome">Coquetel</h4>
                     <p>Copo 300ml</p>
                     <div class="cifrao">R$</div>
-                    <h5 class="valor"> 6,90</h5>
+                    <h5 class="valor"> 16,90</h5>
                     <img class="escondido check-tamanho" src="img/Vector.png">
                 </div>
                 <div class="descricao" onclick="selecionarBebida(this); botaoFinalizar()">
@@ -74,7 +74,7 @@
                     <h4 class="nome">Café expresso</h4>
                     <p>Xícara de café</p>
                     <div class="cifrao">R$</div>
-                    <h5 class="valor"> 8,90</h5>
+                    <h5 class="valor"> 18,90</h5>
                     <img class="escondido check-tamanho" src="img/Vector.png">
                 </div>
             </div>
@@ -85,7 +85,7 @@
                     <h4 class="nome">Pudim</h4>
                     <p>Apenas pudim</p>
                     <div class="cifrao">R$</div>
-                    <h5 class="valor"> 7,90</h5>
+                    <h5 class="valor"> 27,90</h5>
                     <img class="escondido check-tamanho" src="img/Vector.png">
                 </div>
                 <div class="descricao" onclick="selecionarSobremesa(this); botaoFinalizar()">
@@ -102,12 +102,12 @@
                     <p>Waffles com creme</p>
                     <div class="cifrao">R$</div>
                     <h5 class="valor"> 13,90</h5>
-                    <img class="escondido check-tamanho" src="img/Vector.png">
+                    <div class="checkVerde"><img class="escondido check-tamanho" src="img/Vector.png"></div>
                 </div>
             </div>
         </div>
         <footer>
-            <button class="botao-finalizar" onclick="fazerPedido(this)" disabled>Selecione os 3 itens<br>
+            <button class="botao-finalizar" onclick="fazerPedido(this); botaoFinalizarInfo()" disabled>Selecione os 3 itens<br>
                 para fechar o pedido</button>
         </footer>
     </div>
@@ -122,7 +122,7 @@
             <div class="valor-sobremesa"></div>
             <div class="total">Total</div>
             <div class="valor-total"></div>
-            <div class="confirmacao">
+            <div class="confirmacao" onclick="botaoFinalDoPedido()">
                 <p>Tudo certo, pode pedir!</p>
             </div>
             <div class="cancelar">Cancelar</div>

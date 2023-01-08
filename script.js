@@ -8,18 +8,30 @@ let valorPrato;
 let valorBebida;
 let valorSobremesa;
 let soma;
+let nome;
+let endereco;
 
 function selecionarPrato(botaoClicado) {
 
     const pratoAnterior = document.querySelector('.pratos .selecionado');
+
     
     if (pratoAnterior !== null){
 
         pratoAnterior.classList.remove('selecionado');
-    }
-
+    } 
     botaoClicado.classList.add('selecionado');
-    
+
+    checkAnterior = document.querySelector('.pratos .selecionado .checkVerde');
+
+    if (checkAnterior !== null){
+
+        checkAnterior.classList.add('escondido');
+    } 
+
+    const botaoCheck = document.querySelector('.pratos .selecionado .checkVerde');
+    botaoCheck.classList.remove('escondido');
+
     
     prato = botaoClicado.classList.contains('selecionado');
     console.log(prato);
@@ -48,6 +60,9 @@ function selecionarBebida(botaoClicado2) {
     
 
     botaoClicado2.classList.add('selecionado');
+
+    const check2 = document.querySelector('.bebidas .selecionado .escondido');
+    check2.classList.remove('escondido');
     
 
     bebida = botaoClicado2.classList.contains('selecionado');
@@ -61,6 +76,8 @@ function selecionarBebida(botaoClicado2) {
     botaoClicado2 = document.querySelector('.bebidas .selecionado .valor');
     valorBebida = botaoClicado2.innerHTML;
     valorBebida = parseFloat(valorBebida.replace(',','.'));
+
+
     
 }
     
@@ -74,6 +91,10 @@ function selecionarSobremesa(botaoClicado3) {
     }
     
     botaoClicado3.classList.add('selecionado');
+
+
+    const check3 = document.querySelector('.sobremesas .selecionado .escondido');
+    check3.classList.remove('escondido');
    
 
     sobremesa = botaoClicado3.classList.contains('selecionado');
@@ -96,20 +117,27 @@ function botaoFinalizar() {
         const botao = document.querySelector('.botao-finalizar');
         botao.classList.add('botao-ativo');
         botao.innerHTML = "Fechar pedido";
+        
     }
     const habilitarBotao = document.querySelector('.botao-finalizar');
     habilitarBotao.removeAttribute("disabled");
+
 }
-function textoDoPedido() {
+
+function botaoFinalizarInfo(){
+    nome = prompt("Digite seu nome");
+    endereco = prompt("Digite seu endereco");
+
+}
+
+function botaoFinalDoPedido() {
     let mensagem;
     soma = valorPrato + valorBebida + valorSobremesa;
 
-    mensagem = `Olá, gostaria de fazer o pedido:
-              - Prato: ${nomePrato}
-              - Bebida: ${nomeBebida}
-              - Sobremesa: ${nomeSobremesa}
-              Total: R$ ${soma.toFixed(2)}`
-    alert(mensagem);
+    mensagem = "Olá, gostaria de fazer o pedido:" + "\n - Prato: " + nomePrato + "\n - Bebida: " + nomeBebida + "\n - Sobremesa: " + nomeSobremesa + 
+    "\n Total: R$ " + soma.toFixed(2) + "\n\n Nome: " + nome + "\n Endereço: " + endereco
+    mensagem = encodeURIComponent(mensagem);
+    window.open(`https://wa.me/+5512999999999?text=${mensagem}`);
 }
 
 function fazerPedido(botaoPedir) {
