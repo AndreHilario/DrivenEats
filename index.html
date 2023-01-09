@@ -14,7 +14,7 @@
     />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Document</title>
+    <title>Driven Eats</title>
 </head>
 <body>
     <div class="container">
@@ -26,13 +26,13 @@
         <div class="conteudo">
             <h3 class="primeiro-h3">Primeiro, seu prato</h3>
             <div class="pratos">
-                <div data-test="dish" class="descricao" onclick="selecionarPrato(this)" onclick="botaoFinalizar()">
+                <div data-test="dish" class="descricao" onclick="selecionarPrato(this); botaoFinalizar()">
                     <img src="img/frango_yin_yang.png">
                     <h4 data-teste="item-name" class="nome">Frango Yin Yang</h4>
                     <p>Um pouco de batata, um pouco de salada</p>
                     <div class="cifrao">R$</div>
                     <h5 data-teste="item-price" class="valor">14,90</h5>
-                    <div class="checkVerde escondido"><img class="check-tamanho" src="img/Vector.png"></div>
+                    <img src="img/Vector.png" class="escondido check-tamanho 1">
                 </div>
                 <div data-test="dish" class="descricao" onclick="selecionarPrato(this); botaoFinalizar()">
                     <img src="img/toast-eggs-for-breakfast.jpg">
@@ -40,7 +40,7 @@
                     <p>Ovos e torradas</p>
                     <div class="cifrao">R$</div>
                     <h5 data-teste="item-price" class="valor"> 15,90</h5>
-                    <div class="checkVerde escondido"><img class="check-tamanho" src="img/Vector.png"></div>
+                    <img src="img/Vector.png" class="escondido check-tamanho 2">
                 </div>
                 <div  data-test="dish" class="descricao" onclick="selecionarPrato(this); botaoFinalizar()">
                     <img src="img/plated-smoked-salmon.jpg">
@@ -48,7 +48,7 @@
                     <p>Salmão defumado</p>
                     <div class="cifrao">R$</div>
                     <h5 data-teste="item-price" class="valor"> 16,90</h5>
-                    <div class="checkVerde escondido"><img class="check-tamanho" src="img/Vector.png"></div>
+                    <img src="img/Vector.png" class=" escondido check-tamanho 3">
                 </div>
             </div>
             <h3>Agora, sua bebida</h3>
@@ -59,7 +59,7 @@
                     <p>Lata 350ml</p>
                     <div class="cifrao">R$</div>
                     <h5 data-teste="item-price" class="valor"> 14,90</h5>
-                    <img class="escondido check-tamanho" src="img/Vector.png">
+                    <img src="img/Vector.png" class="escondido check-tamanho">
                 </div>
                 <div data-test="drink" class="descricao" onclick="selecionarBebida(this); botaoFinalizar()">
                     <img src="img/a-cocktail-with-a-touch-of-class.jpg">
@@ -67,7 +67,7 @@
                     <p>Copo 300ml</p>
                     <div class="cifrao">R$</div>
                     <h5 data-teste="item-price" class="valor"> 16,90</h5>
-                    <img class="escondido check-tamanho" src="img/Vector.png">
+                    <img src="img/Vector.png" class="escondido check-tamanho">
                 </div>
                 <div data-test="drink" class="descricao" onclick="selecionarBebida(this); botaoFinalizar()">
                     <img src="img/coffee-in-plants.jpg">
@@ -75,7 +75,7 @@
                     <p>Xícara de café</p>
                     <div class="cifrao">R$</div>
                     <h5 data-teste="item-price" class="valor"> 18,90</h5>
-                    <img class="escondido check-tamanho" src="img/Vector.png">
+                    <img src="img/Vector.png" class="escondido check-tamanho">
                 </div>
             </div>
             <h3>Por fim, sua sobremesa</h3>
@@ -86,7 +86,7 @@
                     <p>Apenas pudim</p>
                     <div class="cifrao">R$</div>
                     <h5 data-teste="item-price" class="valor"> 27,90</h5>
-                    <img class="escondido check-tamanho" src="img/Vector.png">
+                    <img src="img/Vector.png" class="escondido check-tamanho">
                 </div>
                 <div data-teste="dessert" class="descricao" onclick="selecionarSobremesa(this); botaoFinalizar()">
                     <img src="img/berry-cheesecake.jpg">
@@ -94,7 +94,7 @@
                     <p>Torta de frutas vermelhas</p>
                     <div class="cifrao">R$</div>
                     <h5 data-teste="item-price" class="valor"> 15,90</h5>
-                    <img class="escondido check-tamanho" src="img/Vector.png">
+                    <img src="img/Vector.png" class="escondido check-tamanho">
                 </div>
                 <div data-teste="dessert" class="descricao" onclick="selecionarSobremesa(this); botaoFinalizar()">
                     <img src="img/waffles-with-cream-and-jam.jpg">
@@ -102,7 +102,7 @@
                     <p>Waffles com creme</p>
                     <div class="cifrao">R$</div>
                     <h5 data-teste="item-price" class="valor"> 13,90</h5>
-                    <div class="checkVerde"><img class="escondido check-tamanho" src="img/Vector.png"></div>
+                    <img src="img/Vector.png" class="escondido check-tamanho">
                 </div>
             </div>
         </div>
