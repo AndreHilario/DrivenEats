@@ -68,9 +68,7 @@ function selecionarBebida(botaoClicado2) {
     divBebida = botaoClicado2;
 
     if (botaoClicado2 !== divBebida) {     
-
-        divPrato.classList.add('escondido');   
-
+        divPrato.classList.add('escondido');
     }
 
     const check2 = document.querySelector('.bebidas .selecionado .escondido');
@@ -107,9 +105,7 @@ function selecionarSobremesa(botaoClicado3) {
 
     divSobremesa = botaoClicado3;
     if (botaoClicado3 !== divSobremesa) {  
-
         divSobremesa.classList.add('escondido');
-
     }
 
     const check3 = document.querySelector('.sobremesas .selecionado .escondido');
