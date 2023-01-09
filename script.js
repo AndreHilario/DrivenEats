@@ -67,8 +67,7 @@ function selecionarBebida(botaoClicado2) {
 
     divBebida = botaoClicado2;
 
-    if (botaoClicado2 !== divBebida) {   
-          
+    if (botaoClicado2 !== divBebida) {     
         divPrato.classList.add('escondido');
     }
 
@@ -87,9 +86,7 @@ function selecionarBebida(botaoClicado2) {
     botaoClicado2 = document.querySelector('.bebidas .selecionado .valor');
     valorBebida = botaoClicado2.innerHTML;
     valorBebida = parseFloat(valorBebida.replace(',','.'));
-
-
-    
+   
 }
     
 function selecionarSobremesa(botaoClicado3) {
@@ -109,7 +106,6 @@ function selecionarSobremesa(botaoClicado3) {
 
         divSobremesa.classList.add('escondido');
     }
-
     const check3 = document.querySelector('.sobremesas .selecionado .escondido');
     check3.classList.remove('escondido');
 
