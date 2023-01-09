@@ -188,6 +188,7 @@ function fazerPedido(botaoPedir) {
      
 }
 function cancelar() {
+
     const botaoCancelar = document.querySelector('.painel');
     botaoCancelar.classList.add('escondido');
 
