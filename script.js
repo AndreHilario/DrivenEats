@@ -25,11 +25,13 @@ function selecionarPrato(botaoClicado) {
     } 
     botaoClicado.classList.add('selecionado');
 
-    let divPrato = botaoClicado;
+    divPrato = botaoClicado;
     
-    if (botaoClicado !== divPrato){      
+    if (botaoClicado !== divPrato) {      
+
         divPrato.classList.add('escondido');   
     }
+
     const check = document.querySelector('.pratos .selecionado .escondido');
     check.classList.remove('escondido');
 
@@ -40,7 +42,6 @@ function selecionarPrato(botaoClicado) {
     if(prato === true){
         botaoClicado = document.querySelector('.pratos .selecionado .nome');
         nomePrato = botaoClicado.innerHTML;
-        divPrato = botaoClicado;
     }
     botaoClicado = document.querySelector('.pratos .selecionado .valor');
     valorPrato = botaoClicado.innerHTML;
@@ -63,20 +64,21 @@ function selecionarBebida(botaoClicado2) {
 
     botaoClicado2.classList.add('selecionado');
 
-    let divBebida = botaoClicado2;
+    divBebida = botaoClicado2;
 
-    if (botaoClicado2 !== divBebida){      
+    if (botaoClicado2 !== divBebida) {     
+
         divPrato.classList.add('escondido');   
     }
+
     const check2 = document.querySelector('.bebidas .selecionado .escondido');
     check2.classList.remove('escondido');
-
-    
 
     bebida = botaoClicado2.classList.contains('selecionado');
     console.log(bebida);
 
-    if(bebida === true){
+    if(bebida === true) {
+
         botaoClicado2 = document.querySelector('.bebidas .selecionado .nome');
         nomeBebida = botaoClicado2.innerHTML;
     }
@@ -93,7 +95,7 @@ function selecionarSobremesa(botaoClicado3) {
 
     const sobremesaAnterior = document.querySelector('.sobremesas .selecionado');
     
-    if (sobremesaAnterior !== null){
+    if (sobremesaAnterior !== null) {
 
         sobremesaAnterior.classList.remove('selecionado');
         sobremesaAnterior.children[5].classList.add('escondido');
@@ -101,11 +103,13 @@ function selecionarSobremesa(botaoClicado3) {
     
     botaoClicado3.classList.add('selecionado');
 
-    let divSobremesa = botaoClicado3;
+    divSobremesa = botaoClicado3;
 
-    if (botaoClicado3 !== divSobremesa){      
+    if (botaoClicado3 !== divSobremesa) {  
+
         divSobremesa.classList.add('escondido');   
     }
+
     const check3 = document.querySelector('.sobremesas .selecionado .escondido');
     check3.classList.remove('escondido');
 
@@ -113,7 +117,8 @@ function selecionarSobremesa(botaoClicado3) {
     sobremesa = botaoClicado3.classList.contains('selecionado');
     console.log(sobremesa);
 
-    if(sobremesa === true){
+    if(sobremesa === true) {
+        
         botaoClicado3 = document.querySelector('.sobremesas .selecionado .nome');
         nomeSobremesa = botaoClicado3.innerHTML;
     }
