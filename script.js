@@ -29,7 +29,8 @@ function selecionarPrato(botaoClicado) {
     
     if (botaoClicado !== divPrato) {      
 
-        divPrato.classList.add('escondido');   
+        divPrato.classList.add('escondido');
+
     }
 
     const check = document.querySelector('.pratos .selecionado .escondido');
@@ -69,6 +70,7 @@ function selecionarBebida(botaoClicado2) {
     if (botaoClicado2 !== divBebida) {     
 
         divPrato.classList.add('escondido');   
+
     }
 
     const check2 = document.querySelector('.bebidas .selecionado .escondido');
@@ -104,10 +106,10 @@ function selecionarSobremesa(botaoClicado3) {
     botaoClicado3.classList.add('selecionado');
 
     divSobremesa = botaoClicado3;
-
     if (botaoClicado3 !== divSobremesa) {  
 
-        divSobremesa.classList.add('escondido');   
+        divSobremesa.classList.add('escondido');
+
     }
 
     const check3 = document.querySelector('.sobremesas .selecionado .escondido');
@@ -118,7 +120,7 @@ function selecionarSobremesa(botaoClicado3) {
     console.log(sobremesa);
 
     if(sobremesa === true) {
-        
+
         botaoClicado3 = document.querySelector('.sobremesas .selecionado .nome');
         nomeSobremesa = botaoClicado3.innerHTML;
     }
@@ -159,7 +161,6 @@ function botaoFinalDoPedido() {
 }
 
 function fazerPedido(botaoPedir) {
-
     const botaoPedido = document.querySelector('.painel .escondido');
     botaoPedido.classList.remove('escondido');
 
@@ -193,7 +194,6 @@ function fazerPedido(botaoPedir) {
      
 }
 function cancelar() {
-
     const botaoCancelar = document.querySelector('.painel');
     botaoCancelar.classList.add('escondido');
 
